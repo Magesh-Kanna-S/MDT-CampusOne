@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CampusOne — My Desktop Tech</title>
+<link rel="icon" type="image/png" href="assets/img/favicon.png">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;
+  min-height:100vh;display:flex;align-items:center;justify-content:center;
+  background:#F6F8FC;color:#1F2328;text-align:center;padding:24px}
+.card{max-width:420px;width:100%}
+.logo{display:flex;align-items:center;justify-content:center;gap:12px;margin-bottom:22px}
+.logo img{width:44px;height:44px;border-radius:11px}
+.logo b{font-size:17px;letter-spacing:-.2px}
+.logo span{display:block;font-size:11px;color:#5f6b7a;font-weight:600;margin-top:1px}
+h1{font-size:19px;margin-bottom:8px;letter-spacing:-.3px}
+p{font-size:13.5px;color:#5f6b7a;line-height:1.6;margin-bottom:20px}
+.dot{display:inline-block;width:7px;height:7px;border-radius:50%;margin:0 2.5px}
+.btn{display:inline-flex;align-items:center;gap:9px;background:#4285F4;color:#fff;border:none;
+  font:700 13.5px/1 inherit;padding:12px 22px;border-radius:10px;cursor:pointer;text-decoration:none}
+.btn:hover{background:#1a73e8}
+.small{margin-top:18px;font-size:11.5px;color:#8a94a3}
+@media (prefers-color-scheme:dark){
+  body{background:#171B21;color:#E7EAF0}
+  h1{color:#E7EAF0} p{color:#A7B0BD} .small{color:#7d8794}
+}
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="logo">
+    <img src="assets/img/logo-square.png" alt="My Desktop Tech">
+    <span style="text-align:left"><b>My Desktop Tech</b><span>CampusOne Portal</span></span>
+  </div>
+  <h1>Secured portal area</h1>
+  <p>CampusOne is served from a single secured address — this page does not exist.
+    You are being returned to the portal entrance.</p>
+  <a class="btn" href="./">Return to CampusOne</a>
+  <div class="small">
+    <span class="dot" style="background:#4285F4"></span><span class="dot" style="background:#EA4335"></span><span class="dot" style="background:#FBBC05"></span><span class="dot" style="background:#34A853"></span>
+    <div style="margin-top:10px">© 2026 My Desktop Tech · CampusOne</div>
+  </div>
+</div>
+<script>
+/* any deep or guessed URL lands here — return to the one clean address */
+(function () {
+  setTimeout(function () { try { location.replace('./'); } catch (e) {} }, 900);
+})();
+</script>
+</body>
+</html>
